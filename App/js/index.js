@@ -11,34 +11,34 @@ xui.Class('App', 'xui.Module',{
                 .setName("api_1")
                 .setQueryURL("https://www.crossui.com/xui/backend/PHP/demo.php")
                 .setQueryArgs({
-                    "a":1,
-                    "b":2
+                    "a" : 1,
+                    "b" : 2
                 })
                 .beforeInvoke([
                     {
-                        "desc":"Busy",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[ ],
-                        "method":"busy"
+                        "desc" : "Busy",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [ ],
+                        "method" : "busy"
                     }
                 ])
                 .onData([
                     {
-                        "desc":"free UI",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[ ],
-                        "method":"free"
+                        "desc" : "free UI",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [ ],
+                        "method" : "free"
                     }
                 ])
                 .onError([
                     {
-                        "desc":"free UI",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[ ],
-                        "method":"free"
+                        "desc" : "free UI",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [ ],
+                        "method" : "free"
                     }
                 ])
             );
@@ -70,50 +70,50 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"ctl_treeview5")
                 .setItems([
                     {
-                        "id":"node1",
-                        "caption":"node1",
-                        "sub":[
+                        "id" : "node1",
+                        "caption" : "node1",
+                        "sub" : [
                             {
-                                "id":"node11",
-                                "sub":[
+                                "id" : "node11",
+                                "sub" : [
                                     {
-                                        "id":"node14"
+                                        "id" : "node14"
                                     }
                                 ]
                             },
                             {
-                                "id":"node12",
-                                "image":"http://localhost/crossui.com/rad/img/demo.png",
-                                "sub":[
+                                "id" : "node12",
+                                "image" : "http://localhost/crossui.com/rad/img/demo.png",
+                                "sub" : [
                                     {
-                                        "id":"node13"
+                                        "id" : "node13"
                                     }
                                 ]
                             }
                         ]
                     },
                     {
-                        "id":"node2",
-                        "caption":"node2",
-                        "sub":[
+                        "id" : "node2",
+                        "caption" : "node2",
+                        "sub" : [
                             {
-                                "id":"a"
+                                "id" : "a"
                             },
                             {
-                                "id":"b"
+                                "id" : "b"
                             },
                             {
-                                "id":"c"
+                                "id" : "c"
                             }
                         ]
                     },
                     {
-                        "id":"node3",
-                        "caption":"node3"
+                        "id" : "node3",
+                        "caption" : "node3"
                     },
                     {
-                        "id":"node4",
-                        "caption":"node4"
+                        "id" : "node4",
+                        "caption" : "node4"
                     }
                 ])
                 .setDock("left")
@@ -125,14 +125,14 @@ xui.Class('App', 'xui.Module',{
                 .setValue("node1")
                 .onChange([
                     {
-                        "desc":"fda",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "fda",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             null,
                             "node2"
                         ],
-                        "method":"toggleNode"
+                        "method" : "toggleNode"
                     }
                 ])
                 .onItemSelected("_ctl_treeview5_onitemselected")
@@ -144,134 +144,134 @@ xui.Class('App', 'xui.Module',{
                 .setRowNumbered(true)
                 .setHeader([
                     {
-                        "id":"col1",
-                        "width":"6.704761904761905em",
-                        "type":"input",
-                        "caption":"col1"
+                        "id" : "col1",
+                        "width" : "6.704761904761905em",
+                        "type" : "input",
+                        "caption" : "col1"
                     },
                     {
-                        "id":"col2",
-                        "width":"6.704761904761905em",
-                        "type":"input",
-                        "caption":"col2"
+                        "id" : "col2",
+                        "width" : "6.704761904761905em",
+                        "type" : "input",
+                        "caption" : "col2"
                     },
                     {
-                        "id":"col3",
-                        "width":"6.704761904761905em",
-                        "type":"input",
-                        "caption":"col3"
+                        "id" : "col3",
+                        "width" : "6.704761904761905em",
+                        "type" : "input",
+                        "caption" : "col3"
                     },
                     {
-                        "id":"col4",
-                        "width":"6.704761904761905em",
-                        "type":"input",
-                        "caption":"col4"
+                        "id" : "col4",
+                        "width" : "6.704761904761905em",
+                        "type" : "input",
+                        "caption" : "col4"
                     }
                 ])
                 .setRows([
                     {
-                        "id":"row1",
-                        "cells":[
+                        "id" : "row1",
+                        "cells" : [
                             {
-                                "value":"row1 col1"
+                                "value" : "row1 col1"
                             },
                             {
-                                "value":"row1 col2"
+                                "value" : "row1 col2"
                             },
                             {
-                                "value":"row1 col3"
+                                "value" : "row1 col3"
                             },
                             {
-                                "value":"row1 col4"
+                                "value" : "row1 col4"
                             }
                         ]
                     },
                     {
-                        "id":"row2",
-                        "cells":[
+                        "id" : "row2",
+                        "cells" : [
                             {
-                                "value":"row2 col1",
-                                "dirty":true
+                                "value" : "row2 col1",
+                                "dirty" : true
                             },
                             {
-                                "value":"row2 col2",
-                                "dirty":true
+                                "value" : "row2 col2",
+                                "dirty" : true
                             },
                             {
-                                "value":"row2 col3",
-                                "dirty":true
+                                "value" : "row2 col3",
+                                "dirty" : true
                             },
                             {
-                                "value":"row2 col4",
-                                "dirty":true
+                                "value" : "row2 col4",
+                                "dirty" : true
                             }
                         ],
-                        "sub":[
+                        "sub" : [
                             {
-                                "firstCellStyle":"",
-                                "firstCellClass":"",
-                                "disabled":false,
-                                "readonly":false,
-                                "cells":[
+                                "firstCellStyle" : "",
+                                "firstCellClass" : "",
+                                "disabled" : false,
+                                "readonly" : false,
+                                "cells" : [
                                     {
-                                        "value":"sub1",
-                                        "disabled":"",
-                                        "readonly":"",
-                                        "imageDisplay":"",
-                                        "image":"http://localhost/crossui.com/xui/xui/bg.gif",
-                                        "width":80,
-                                        "cellDisplay":"",
-                                        "cellCls":"xui-treegrid-cell-input",
-                                        "type":"input",
-                                        "caption":"sub1",
-                                        "backgroundImage":"background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
-                                        "backgroundPosition":"background-position:center;",
-                                        "backgroundRepeat":"background-repeat:no-repeat;"
+                                        "value" : "sub1",
+                                        "disabled" : "",
+                                        "readonly" : "",
+                                        "imageDisplay" : "",
+                                        "image" : "http://localhost/crossui.com/xui/xui/bg.gif",
+                                        "width" : 80,
+                                        "cellDisplay" : "",
+                                        "cellCls" : "xui-treegrid-cell-input",
+                                        "type" : "input",
+                                        "caption" : "sub1",
+                                        "backgroundImage" : "background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
+                                        "backgroundPosition" : "background-position:center;",
+                                        "backgroundRepeat" : "background-repeat:no-repeat;"
                                     },
                                     {
-                                        "value":"sub2",
-                                        "disabled":"",
-                                        "readonly":"",
-                                        "imageDisplay":"",
-                                        "image":"http://localhost/crossui.com/xui/xui/bg.gif",
-                                        "width":80,
-                                        "cellDisplay":"",
-                                        "cellCls":"xui-treegrid-cell-input",
-                                        "type":"input",
-                                        "caption":"sub2",
-                                        "backgroundImage":"background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
-                                        "backgroundPosition":"background-position:center;",
-                                        "backgroundRepeat":"background-repeat:no-repeat;"
+                                        "value" : "sub2",
+                                        "disabled" : "",
+                                        "readonly" : "",
+                                        "imageDisplay" : "",
+                                        "image" : "http://localhost/crossui.com/xui/xui/bg.gif",
+                                        "width" : 80,
+                                        "cellDisplay" : "",
+                                        "cellCls" : "xui-treegrid-cell-input",
+                                        "type" : "input",
+                                        "caption" : "sub2",
+                                        "backgroundImage" : "background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
+                                        "backgroundPosition" : "background-position:center;",
+                                        "backgroundRepeat" : "background-repeat:no-repeat;"
                                     },
                                     {
-                                        "value":"sub3",
-                                        "disabled":"",
-                                        "readonly":"",
-                                        "imageDisplay":"",
-                                        "image":"http://localhost/crossui.com/xui/xui/bg.gif",
-                                        "width":80,
-                                        "cellDisplay":"",
-                                        "cellCls":"xui-treegrid-cell-input",
-                                        "type":"input",
-                                        "caption":"sub3",
-                                        "backgroundImage":"background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
-                                        "backgroundPosition":"background-position:center;",
-                                        "backgroundRepeat":"background-repeat:no-repeat;"
+                                        "value" : "sub3",
+                                        "disabled" : "",
+                                        "readonly" : "",
+                                        "imageDisplay" : "",
+                                        "image" : "http://localhost/crossui.com/xui/xui/bg.gif",
+                                        "width" : 80,
+                                        "cellDisplay" : "",
+                                        "cellCls" : "xui-treegrid-cell-input",
+                                        "type" : "input",
+                                        "caption" : "sub3",
+                                        "backgroundImage" : "background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
+                                        "backgroundPosition" : "background-position:center;",
+                                        "backgroundRepeat" : "background-repeat:no-repeat;"
                                     },
                                     {
-                                        "value":"sub4",
-                                        "disabled":"",
-                                        "readonly":"",
-                                        "imageDisplay":"",
-                                        "image":"http://localhost/crossui.com/xui/xui/bg.gif",
-                                        "width":80,
-                                        "cellDisplay":"",
-                                        "cellCls":"xui-treegrid-cell-input",
-                                        "type":"input",
-                                        "caption":"sub4",
-                                        "backgroundImage":"background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
-                                        "backgroundPosition":"background-position:center;",
-                                        "backgroundRepeat":"background-repeat:no-repeat;"
+                                        "value" : "sub4",
+                                        "disabled" : "",
+                                        "readonly" : "",
+                                        "imageDisplay" : "",
+                                        "image" : "http://localhost/crossui.com/xui/xui/bg.gif",
+                                        "width" : 80,
+                                        "cellDisplay" : "",
+                                        "cellCls" : "xui-treegrid-cell-input",
+                                        "type" : "input",
+                                        "caption" : "sub4",
+                                        "backgroundImage" : "background-image:url(http://localhost/crossui.com/xui/xui/bg.gif);",
+                                        "backgroundPosition" : "background-position:center;",
+                                        "backgroundRepeat" : "background-repeat:no-repeat;"
                                     }
                                 ]
                             }
@@ -288,7 +288,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("28.333333333333332em")
                 .setHeight("4.75em")
                 .setOverflow("hidden")
-                .setCaption("URL")
+                .setCaption("Service Reset tools")
                 .setToggleBtn(false)
             );
             
@@ -300,17 +300,17 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("URL Test 1")
+                .setCaption("Oki Resetter tool")
                 .onClick([
                     {
-                        "desc":"self",
-                        "type":"other",
-                        "target":"url",
-                        "method":"open----_self",
-                        "args":[
-                            "https://crossui.com"
+                        "desc" : "self",
+                        "type" : "other",
+                        "target" : "url",
+                        "method" : "open----_self",
+                        "args" : [
+                            "https://files.printerresetter.com/OKIResetterSetupFull32.exe"
                         ],
-                        "event":1
+                        "event" : 1
                     }
                 ])
             );
@@ -323,20 +323,20 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("URL Test 2")
+                .setCaption("WIC Reset Utility")
                 .onClick([
                     {
-                        "desc":"blank",
-                        "type":"other",
-                        "target":"url",
-                        "method":"open----_blank",
-                        "args":[
-                            "https://crossui.com",
+                        "desc" : "blank",
+                        "type" : "other",
+                        "target" : "url",
+                        "method" : "open----_blank",
+                        "args" : [
+                            "https://www.2manuals.com/WIC/wicreset.exe",
                             {
-                                "key":null
+                                "key" : null
                             }
                         ],
-                        "event":1
+                        "event" : 1
                     }
                 ])
             );
@@ -349,16 +349,20 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
-                .setCaption("Email Test")
+                .setCaption("Print Info")
                 .onClick([
                     {
-                        "desc":"email",
-                        "type":"other",
-                        "target":"url",
-                        "params":[
-                            "linb@crossui.com"
+                        "desc" : "blank",
+                        "type" : "other",
+                        "target" : "url",
+                        "method" : "open----_blank",
+                        "args" : [
+                            "https://drive.google.com/file/d/1mRyzZHZiVkVcJY7ymh4JKz4kutyaLyda/view?usp=share_link",
+                            {
+                                "key" : null
+                            }
                         ],
-                        "method":"mailTo"
+                        "event" : 1
                     }
                 ])
             );
@@ -371,7 +375,7 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("28.333333333333332em")
                 .setHeight("7.833333333333333em")
                 .setOverflow("hidden")
-                .setCaption("System Message")
+                .setCaption("Print Supply Status")
                 .setToggleBtn(false)
             );
             
@@ -384,28 +388,28 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.333333333333334em")
                 .setHeight("2.8333333333333335em")
                 .setZIndex(1002)
-                .setCaption("Alert Test")
+                .setCaption("HP Supply")
                 .onClick([
                     {
-                        "desc":"alert",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "alert",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "Title",
                             "Alert Message"
                         ],
-                        "method":"alert",
-                        "onOK":2
+                        "method" : "alert",
+                        "onOK" : 2
                     },
                     {
-                        "desc":"next",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "next",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "Hi",
                             "You closed alert dialog"
                         ],
-                        "method":"message"
+                        "method" : "message"
                     }
                 ])
             );
@@ -418,17 +422,17 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.8333333333333335em")
-                .setCaption("Pop Message")
+                .setCaption("Epson Supply")
                 .onClick([
                     {
-                        "desc":"message",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "message",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "Title",
                             "Pop Message"
                         ],
-                        "method":"pop"
+                        "method" : "pop"
                     }
                 ])
             );
@@ -441,48 +445,20 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("8.333333333333334em")
                 .setHeight("2.8333333333333335em")
-                .setCaption("Floating Message")
+                .setCaption("Canon Supply")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"other",
-                        "target":"msg",
-                        "method":"message",
-                        "args":[
+                        "desc" : "action",
+                        "type" : "other",
+                        "target" : "msg",
+                        "method" : "message",
+                        "args" : [
                             "Body",
                             "Title",
                             400,
                             1000
                         ],
-                        "event":1
-                    }
-                ])
-            );
-            
-            host.ctl_group2.append(
-                xui.create("xui.UI.HTMLButton")
-                .setHost(host,"ctl_htmlbutton63")
-                .setDesc("Show Waiting")
-                .setLeft("19.166666666666668em")
-                .setTop("3.3333333333333335em")
-                .setWidth("8.333333333333334em")
-                .setHeight("2.5em")
-                .setCaption("Show Waiting")
-                .onClick([
-                    {
-                        "desc":"wait",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[ ],
-                        "method":"busy"
-                    },
-                    {
-                        "desc":"ok",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[ ],
-                        "method":"free",
-                        "timeout":1000
+                        "event" : 1
                     }
                 ])
             );
@@ -496,54 +472,54 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
                 .setZIndex(1002)
-                .setCaption("Confirm Test")
+                .setCaption("Oki Supply")
                 .onClick([
                     {
-                        "desc":"confirm",
-                        "type":"other",
-                        "target":"msg",
-                        "method":"confirm",
-                        "args":[
+                        "desc" : "confirm",
+                        "type" : "other",
+                        "target" : "msg",
+                        "method" : "confirm",
+                        "args" : [
                             "Confirm",
                             "Continuew to exec?"
                         ],
-                        "okFlag":"_confirm_yes",
-                        "koFlag":"_confirm_no",
-                        "event":1,
-                        "onOK":2,
-                        "onKO":3
+                        "okFlag" : "_confirm_yes",
+                        "koFlag" : "_confirm_no",
+                        "event" : 1,
+                        "onOK" : 2,
+                        "onKO" : 3
                     },
                     {
-                        "desc":"yes",
-                        "type":"other",
-                        "target":"msg",
-                        "method":"message",
-                        "args":[
+                        "desc" : "yes",
+                        "type" : "other",
+                        "target" : "msg",
+                        "method" : "message",
+                        "args" : [
                             "You confirmed it",
                             "Yes"
                         ],
-                        "conditions":[
+                        "conditions" : [
                             {
-                                "left":"{temp._confirm_yes}",
-                                "symbol":"defined",
-                                "right":""
+                                "left" : "{temp._confirm_yes}",
+                                "symbol" : "defined",
+                                "right" : ""
                             }
                         ]
                     },
                     {
-                        "desc":"no",
-                        "type":"other",
-                        "target":"msg",
-                        "args":[
+                        "desc" : "no",
+                        "type" : "other",
+                        "target" : "msg",
+                        "args" : [
                             "You didn't confirm it",
                             "No"
                         ],
-                        "method":"message",
-                        "conditions":[
+                        "method" : "message",
+                        "conditions" : [
                             {
-                                "left":"{temp._confirm_no}",
-                                "symbol":"defined",
-                                "right":""
+                                "left" : "{temp._confirm_no}",
+                                "symbol" : "defined",
+                                "right" : ""
                             }
                         ]
                     }
@@ -559,55 +535,55 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("8.333333333333334em")
                 .setHeight("2.5em")
                 .setZIndex(1002)
-                .setCaption("Prompt Test")
+                .setCaption("Brother Supply")
                 .onClick([
                     {
-                        "desc":"prompt",
-                        "type":"other",
-                        "target":"msg",
-                        "method":"prompt",
-                        "args":[
+                        "desc" : "prompt",
+                        "type" : "other",
+                        "target" : "msg",
+                        "method" : "prompt",
+                        "args" : [
                             "Title",
                             "Continuew to exec?",
                             "text"
                         ],
-                        "okFlag":"_prompt_ok",
-                        "koFlag":"_prompt_cancel",
-                        "event":1,
-                        "onOK":3,
-                        "onKO":4
+                        "okFlag" : "_prompt_ok",
+                        "koFlag" : "_prompt_cancel",
+                        "event" : 1,
+                        "onOK" : 3,
+                        "onKO" : 4
                     },
                     {
-                        "desc":"ok",
-                        "type":"other",
-                        "target":"msg",
-                        "method":"message",
-                        "conditions":[
+                        "desc" : "ok",
+                        "type" : "other",
+                        "target" : "msg",
+                        "method" : "message",
+                        "conditions" : [
                             {
-                                "left":"{temp._prompt_ok}",
-                                "symbol":"defined",
-                                "right":""
+                                "left" : "{temp._prompt_ok}",
+                                "symbol" : "defined",
+                                "right" : ""
                             }
                         ],
-                        "args":[
+                        "args" : [
                             "Your input is '{temp.okData}'",
                             "ok"
                         ]
                     },
                     {
-                        "desc":"cancel",
-                        "type":"other",
-                        "target":"msg",
-                        "method":"message",
-                        "args":[
+                        "desc" : "cancel",
+                        "type" : "other",
+                        "target" : "msg",
+                        "method" : "message",
+                        "args" : [
                             "You cancelled the prompt",
                             "cancel"
                         ],
-                        "conditions":[
+                        "conditions" : [
                             {
-                                "left":"{temp._prompt_cancel}",
-                                "symbol":"defined",
-                                "right":""
+                                "left" : "{temp._prompt_cancel}",
+                                "symbol" : "defined",
+                                "right" : ""
                             }
                         ]
                     }
@@ -637,11 +613,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Destroy Control")
                 .onClick([
                     {
-                        "desc":"dest",
-                        "type":"control",
-                        "target":"ctl_image103",
-                        "params":[ ],
-                        "method":"destroy"
+                        "desc" : "dest",
+                        "type" : "control",
+                        "target" : "ctl_image103",
+                        "params" : [ ],
+                        "method" : "destroy"
                     }
                 ])
             );
@@ -657,19 +633,19 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Show / Hide Control")
                 .onClick([
                     {
-                        "desc":"hide",
-                        "type":"control",
-                        "target":"ctl_panel7",
-                        "params":[ ],
-                        "method":"hide"
+                        "desc" : "hide",
+                        "type" : "control",
+                        "target" : "ctl_panel7",
+                        "params" : [ ],
+                        "method" : "hide"
                     },
                     {
-                        "desc":"show",
-                        "type":"control",
-                        "target":"ctl_panel7",
-                        "params":[ ],
-                        "method":"show",
-                        "timeout":500
+                        "desc" : "show",
+                        "type" : "control",
+                        "target" : "ctl_panel7",
+                        "params" : [ ],
+                        "method" : "show",
+                        "timeout" : 500
                     }
                 ])
             );
@@ -682,57 +658,57 @@ xui.Class('App', 'xui.Module',{
                 .setTop("0em")
                 .setWidth("17.5em")
                 .setHeight("2.5em")
-                .setCaption("Modify Control's properties")
+                .setCaption("Control Panel")
                 .onClick([
                     {
-                        "desc":"prop1",
-                        "type":"control",
-                        "target":"ctl_htmlbutton2",
-                        "params":[
+                        "desc" : "prop1",
+                        "type" : "control",
+                        "target" : "ctl_htmlbutton2",
+                        "params" : [
                             {
-                                "html":"[Dialog Test]",
-                                "CC":{
-                                    "KEY":null
+                                "html" : "[Dialog Test]",
+                                "CC" : {
+                                    "KEY" : null
                                 },
-                                "CS":{
-                                    "KEY":{
-                                        "border-radius":"4px 4px 4px 4px",
-                                        "$gradient":{
-                                            "stops":[
+                                "CS" : {
+                                    "KEY" : {
+                                        "border-radius" : "4px 4px 4px 4px",
+                                        "$gradient" : {
+                                            "stops" : [
                                                 {
-                                                    "pos":"0%",
-                                                    "clr":"#FFD65E"
+                                                    "pos" : "0%",
+                                                    "clr" : "#FFD65E"
                                                 },
                                                 {
-                                                    "pos":"50%",
-                                                    "clr":"#FEBF04"
+                                                    "pos" : "50%",
+                                                    "clr" : "#FEBF04"
                                                 },
                                                 {
-                                                    "pos":"100%",
-                                                    "clr":"#FFC926"
+                                                    "pos" : "100%",
+                                                    "clr" : "#FFC926"
                                                 }
                                             ],
-                                            "type":"linear",
-                                            "orient":"T"
+                                            "type" : "linear",
+                                            "orient" : "T"
                                         }
                                     }
                                 }
                             }
                         ],
-                        "method":"setProperties"
+                        "method" : "setProperties"
                     },
                     {
-                        "desc":"dialog",
-                        "type":"control",
-                        "target":"ctl_dialog3",
-                        "params":[
+                        "desc" : "dialog",
+                        "type" : "control",
+                        "target" : "ctl_dialog3",
+                        "params" : [
                             {
-                                "minBtn":false,
-                                "maxBtn":false,
-                                "shadow":false
+                                "minBtn" : false,
+                                "maxBtn" : false,
+                                "shadow" : false
                             }
                         ],
-                        "method":"setProperties"
+                        "method" : "setProperties"
                     }
                 ])
             );
@@ -748,22 +724,22 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Show Control to Container")
                 .onClick([
                     {
-                        "desc":"con",
-                        "type":"control",
-                        "target":"ctl_htmlbutton2",
-                        "method":"show",
-                        "args":[
+                        "desc" : "con",
+                        "type" : "control",
+                        "target" : "ctl_htmlbutton2",
+                        "method" : "show",
+                        "args" : [
                             "{page.ctl_layout14}",
                             "main"
                         ],
-                        "event":1
+                        "event" : 1
                     },
                     {
-                        "desc":"con2",
-                        "type":"control",
-                        "target":"ctl_htmlbutton7",
-                        "method":"show",
-                        "args":[
+                        "desc" : "con2",
+                        "type" : "control",
+                        "target" : "ctl_htmlbutton7",
+                        "method" : "show",
+                        "args" : [
                             "{page.ctl_tabs4}",
                             "a"
                         ]
@@ -782,19 +758,19 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Panel Waiting")
                 .onClick([
                     {
-                        "desc":"wait",
-                        "type":"control",
-                        "target":"ctl_panel7",
-                        "params":[ ],
-                        "method":"busy"
+                        "desc" : "wait",
+                        "type" : "control",
+                        "target" : "ctl_panel7",
+                        "params" : [ ],
+                        "method" : "busy"
                     },
                     {
-                        "desc":"ok",
-                        "type":"control",
-                        "target":"ctl_panel7",
-                        "params":[ ],
-                        "method":"free",
-                        "timeout":1000
+                        "desc" : "ok",
+                        "type" : "control",
+                        "target" : "ctl_panel7",
+                        "params" : [ ],
+                        "method" : "free",
+                        "timeout" : 1000
                     }
                 ])
             );
@@ -822,11 +798,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Clear Items in TreeView")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[ ],
-                        "method":"clearItems"
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [ ],
+                        "method" : "clearItems"
                     }
                 ])
             );
@@ -842,11 +818,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Clear Rows")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[ ],
-                        "method":"removeAllRows"
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [ ],
+                        "method" : "removeAllRows"
                     }
                 ])
             );
@@ -862,11 +838,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Clear Columns")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[ ],
-                        "method":"setHeader"
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [ ],
+                        "method" : "setHeader"
                     }
                 ])
             );
@@ -882,22 +858,22 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Remove Items in TreeView")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             "node1;node2"
                         ],
-                        "method":"removeItems"
+                        "method" : "removeItems"
                     },
                     {
-                        "desc":"action2",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "action2",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             "first"
                         ],
-                        "method":"removeItems"
+                        "method" : "removeItems"
                     }
                 ])
             );
@@ -913,22 +889,22 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Remove Rows")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "row1;row2"
                         ],
-                        "method":"removeRows"
+                        "method" : "removeRows"
                     },
                     {
-                        "desc":"action2",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "action2",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "first"
                         ],
-                        "method":"removeRows"
+                        "method" : "removeRows"
                     }
                 ])
             );
@@ -944,13 +920,13 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Remove Columns")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "col3;col4"
                         ],
-                        "method":"removeCols"
+                        "method" : "removeCols"
                     }
                 ])
             );
@@ -966,19 +942,19 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Insert Items to TreeView")
                 .onClick([
                     {
-                        "desc":"first",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "first",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"first",
-                                    "caption":"first",
-                                    "sub":[
+                                    "id" : "first",
+                                    "caption" : "first",
+                                    "sub" : [
                                         {
-                                            "id":"node2.51",
-                                            "caption":"node2.5"
+                                            "id" : "node2.51",
+                                            "caption" : "node2.5"
                                         }
                                     ]
                                 }
@@ -987,18 +963,18 @@ xui.Class('App', 'xui.Module',{
                             null,
                             true
                         ],
-                        "event":1
+                        "event" : 1
                     },
                     {
-                        "desc":"last",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "last",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"last",
-                                    "caption":"last"
+                                    "id" : "last",
+                                    "caption" : "last"
                                 }
                             ],
                             null,
@@ -1007,15 +983,15 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"a 1",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "a 1",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"a node2",
-                                    "caption":"a node2"
+                                    "id" : "a node2",
+                                    "caption" : "a node2"
                                 }
                             ],
                             null,
@@ -1024,15 +1000,15 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"a 2",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "a 2",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"a last",
-                                    "caption":"a last"
+                                    "id" : "a last",
+                                    "caption" : "a last"
                                 }
                             ],
                             null,
@@ -1041,15 +1017,15 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"b 1",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "b 1",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"b node1",
-                                    "caption":"b node1"
+                                    "id" : "b node1",
+                                    "caption" : "b node1"
                                 }
                             ],
                             null,
@@ -1058,15 +1034,15 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"b 2",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "b 2",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"b last",
-                                    "caption":"b  last"
+                                    "id" : "b last",
+                                    "caption" : "b  last"
                                 }
                             ],
                             null,
@@ -1075,15 +1051,15 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"subfirst",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "subfirst",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"subfirst",
-                                    "caption":"subfirst"
+                                    "id" : "subfirst",
+                                    "caption" : "subfirst"
                                 }
                             ],
                             "node1",
@@ -1092,15 +1068,15 @@ xui.Class('App', 'xui.Module',{
                         ]
                     },
                     {
-                        "desc":"sublast",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "method":"insertItems",
-                        "args":[
+                        "desc" : "sublast",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "method" : "insertItems",
+                        "args" : [
                             [
                                 {
-                                    "id":"sublast",
-                                    "caption":"sublast"
+                                    "id" : "sublast",
+                                    "caption" : "sublast"
                                 }
                             ],
                             "node1",
@@ -1122,26 +1098,26 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Insert Rows to TreeGrid")
                 .onClick([
                     {
-                        "desc":"first",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "first",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"first",
-                                    "caption":"first",
-                                    "cells":[
+                                    "id" : "first",
+                                    "caption" : "first",
+                                    "cells" : [
                                         {
-                                            "value":"a"
+                                            "value" : "a"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1150,29 +1126,29 @@ xui.Class('App', 'xui.Module',{
                             null,
                             true
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"last",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "last",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"last",
-                                    "caption":"last",
-                                    "cells":[
+                                    "id" : "last",
+                                    "caption" : "last",
+                                    "cells" : [
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         },
                                         {
-                                            "value":"w"
+                                            "value" : "w"
                                         },
                                         {
-                                            "value":"s"
+                                            "value" : "s"
                                         }
                                     ]
                                 }
@@ -1181,29 +1157,29 @@ xui.Class('App', 'xui.Module',{
                             null,
                             false
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"b1",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "b1",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"b row2",
-                                    "caption":"b row2",
-                                    "cells":[
+                                    "id" : "b row2",
+                                    "caption" : "b row2",
+                                    "cells" : [
                                         {
-                                            "value":"a"
+                                            "value" : "a"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1212,29 +1188,29 @@ xui.Class('App', 'xui.Module',{
                             "row2",
                             true
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"b2",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "b2",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"b last",
-                                    "caption":"b last",
-                                    "cells":[
+                                    "id" : "b last",
+                                    "caption" : "b last",
+                                    "cells" : [
                                         {
-                                            "value":"a"
+                                            "value" : "a"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1243,29 +1219,29 @@ xui.Class('App', 'xui.Module',{
                             "last",
                             true
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"a 1",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "a 1",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"a row2",
-                                    "caption":"a row2",
-                                    "cells":[
+                                    "id" : "a row2",
+                                    "caption" : "a row2",
+                                    "cells" : [
                                         {
-                                            "value":"a"
+                                            "value" : "a"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1274,29 +1250,29 @@ xui.Class('App', 'xui.Module',{
                             "row2",
                             false
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"a 2",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "a 2",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"a first",
-                                    "caption":"a first",
-                                    "cells":[
+                                    "id" : "a first",
+                                    "caption" : "a first",
+                                    "cells" : [
                                         {
-                                            "value":"a"
+                                            "value" : "a"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1305,28 +1281,28 @@ xui.Class('App', 'xui.Module',{
                             "first",
                             false
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"subfirst",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "subfirst",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"subfirst",
-                                    "cells":[
+                                    "id" : "subfirst",
+                                    "cells" : [
                                         {
-                                            "value":"subfirst"
+                                            "value" : "subfirst"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1335,28 +1311,28 @@ xui.Class('App', 'xui.Module',{
                             null,
                             true
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     },
                     {
-                        "desc":"sublast",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "sublast",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             [
                                 {
-                                    "id":"sublast",
-                                    "cells":[
+                                    "id" : "sublast",
+                                    "cells" : [
                                         {
-                                            "value":"sublast"
+                                            "value" : "sublast"
                                         },
                                         {
-                                            "value":"b"
+                                            "value" : "b"
                                         },
                                         {
-                                            "value":"c"
+                                            "value" : "c"
                                         },
                                         {
-                                            "value":"d"
+                                            "value" : "d"
                                         }
                                     ]
                                 }
@@ -1365,7 +1341,7 @@ xui.Class('App', 'xui.Module',{
                             null,
                             false
                         ],
-                        "method":"insertRows"
+                        "method" : "insertRows"
                     }
                 ])
             );
@@ -1381,28 +1357,28 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Update Item in TreeView")
                 .onClick([
                     {
-                        "desc":"a",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "a",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             "node2",
                             {
-                                "caption":"NODE2"
+                                "caption" : "NODE2"
                             }
                         ],
-                        "method":"updateItem"
+                        "method" : "updateItem"
                     },
                     {
-                        "desc":"b",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "b",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             "last",
                             {
-                                "caption":"[last]"
+                                "caption" : "[last]"
                             }
                         ],
-                        "method":"updateItem"
+                        "method" : "updateItem"
                     }
                 ])
             );
@@ -1418,28 +1394,28 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Update Row in Grid")
                 .onClick([
                     {
-                        "desc":"a",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "a",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "row2",
                             {
-                                "caption":"ROW2"
+                                "caption" : "ROW2"
                             }
                         ],
-                        "method":"updateRow"
+                        "method" : "updateRow"
                     },
                     {
-                        "desc":"b",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "b",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "first",
                             {
-                                "height":80
+                                "height" : 80
                             }
                         ],
-                        "method":"updateRow"
+                        "method" : "updateRow"
                     }
                 ])
             );
@@ -1455,17 +1431,17 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Update Column in Grid")
                 .onClick([
                     {
-                        "desc":"a",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "a",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "col3",
                             {
-                                "caption":"abva",
-                                "width":30
+                                "caption" : "abva",
+                                "width" : 30
                             }
                         ],
-                        "method":"updateHeader"
+                        "method" : "updateHeader"
                     }
                 ])
             );
@@ -1481,38 +1457,38 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Update Cell in Grid")
                 .onClick([
                     {
-                        "desc":"row2:col2",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "method":"updateCellByRowCol",
-                        "args":[
+                        "desc" : "row2:col2",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "method" : "updateCellByRowCol",
+                        "args" : [
                             "{page.ctl_treegrid5.updateCellByRowCol()}",
                             undefined,
                             undefined,
                             "row2",
                             "col2",
                             {
-                                "caption":"cca"
+                                "caption" : "cca"
                             }
                         ],
-                        "redirection":"other:callback:call",
-                        "event":1
+                        "redirection" : "other:callback:call",
+                        "event" : 1
                     },
                     {
-                        "desc":"1:1",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "args":[
+                        "desc" : "1:1",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "args" : [
                             "{page.ctl_treegrid5.updateCellByRowCol2()}",
                             undefined,
                             undefined,
                             "0:0",
                             {
-                                "caption":"0:0"
+                                "caption" : "0:0"
                             }
                         ],
-                        "method":"updateCellByRowCol2",
-                        "redirection":"other:callback:call"
+                        "method" : "updateCellByRowCol2",
+                        "redirection" : "other:callback:call"
                     }
                 ])
             );
@@ -1528,25 +1504,19 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Toggle Panel")
                 .onClick([
                     {
-                        "desc":"fold",
-                        "type":"control",
-                        "target":"ctl_panel7",
-                        "params":[
-                            false,
-                            false
-                        ],
-                        "method":"setToggle"
+                        "desc" : "fold",
+                        "type" : "control",
+                        "target" : "ctl_panel7",
+                        "params" : [false, false],
+                        "method" : "setToggle"
                     },
                     {
-                        "desc":"expand",
-                        "type":"control",
-                        "target":"ctl_panel7",
-                        "params":[
-                            true,
-                            true
-                        ],
-                        "method":"setToggle",
-                        "timeout":500
+                        "desc" : "expand",
+                        "type" : "control",
+                        "target" : "ctl_panel7",
+                        "params" : [true, true],
+                        "method" : "setToggle",
+                        "timeout" : 500
                     }
                 ])
             );
@@ -1562,25 +1532,25 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Toggle TreeView")
                 .onClick([
                     {
-                        "desc":"expand",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "expand",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             "node2",
                             true
                         ],
-                        "method":"toggleNode"
+                        "method" : "toggleNode"
                     },
                     {
-                        "desc":"fold",
-                        "type":"control",
-                        "target":"ctl_treeview5",
-                        "params":[
+                        "desc" : "fold",
+                        "type" : "control",
+                        "target" : "ctl_treeview5",
+                        "params" : [
                             "node2",
                             false
                         ],
-                        "method":"toggleNode",
-                        "timeout":800
+                        "method" : "toggleNode",
+                        "timeout" : 800
                     }
                 ])
             );
@@ -1596,25 +1566,25 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Toggle TreeGrid")
                 .onClick([
                     {
-                        "desc":"expand",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "expand",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "row2",
                             true
                         ],
-                        "method":"toggleRow"
+                        "method" : "toggleRow"
                     },
                     {
-                        "desc":"fold",
-                        "type":"control",
-                        "target":"ctl_treegrid5",
-                        "params":[
+                        "desc" : "fold",
+                        "type" : "control",
+                        "target" : "ctl_treegrid5",
+                        "params" : [
                             "row2",
                             false
                         ],
-                        "method":"toggleRow",
-                        "timeout":800
+                        "method" : "toggleRow",
+                        "timeout" : 800
                     }
                 ])
             );
@@ -1639,9 +1609,9 @@ xui.Class('App', 'xui.Module',{
                 .setWidth("28.166666666666668em")
                 .setHeight("13.5em")
                 .setCustomStyle({
-                    "KEY":{
-                        "border":"dashed #483D8B 1px",
-                        "border-radius":"4px 4px 4px 4px"
+                    "KEY" : {
+                        "border" : "dashed #483D8B 1px",
+                        "border-radius" : "4px 4px 4px 4px"
                     }
                 })
             );
@@ -1657,15 +1627,15 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Show Page")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"page",
-                        "target":"App.XUISubPage",
-                        "args":[
+                        "desc" : "action",
+                        "type" : "page",
+                        "target" : "App.XUISubPage",
+                        "args" : [
                             "{page.ctl_pane18}",
                             null
                         ],
-                        "method":"show",
-                        "event":1
+                        "method" : "show",
+                        "event" : 1
                     }
                 ])
             );
@@ -1681,11 +1651,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Hide Page")
                 .onClick([
                     {
-                        "desc":"Hide page",
-                        "type":"page",
-                        "target":"App.XUISubPage",
-                        "params":[ ],
-                        "method":"hide"
+                        "desc" : "Hide page",
+                        "type" : "page",
+                        "target" : "App.XUISubPage",
+                        "params" : [ ],
+                        "method" : "hide"
                     }
                 ])
             );
@@ -1701,11 +1671,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Destroy Page")
                 .onClick([
                     {
-                        "desc":"Destroy",
-                        "type":"page",
-                        "target":"App.XUISubPage",
-                        "params":[ ],
-                        "method":"destroy"
+                        "desc" : "Destroy",
+                        "type" : "page",
+                        "target" : "App.XUISubPage",
+                        "params" : [ ],
+                        "method" : "destroy"
                     }
                 ])
             );
@@ -1721,13 +1691,13 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Fill Data")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"page",
-                        "target":"App.XUISubPage",
-                        "params":[
+                        "desc" : "action",
+                        "type" : "page",
+                        "target" : "App.XUISubPage",
+                        "params" : [
                             "[data]data/data.json"
                         ],
-                        "method":"setData"
+                        "method" : "setData"
                     }
                 ])
             );
@@ -1743,11 +1713,11 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("&gt;&gt; <br><br>Switch to<div><br></div><div>another</div><div><br></div><div>Page</div>")
                 .onClick([
                     {
-                        "desc":"动作1",
-                        "type":"page",
-                        "target":"App.XUIPage2",
-                        "params":[true],
-                        "method":"switch"
+                        "desc" : "动作1",
+                        "type" : "page",
+                        "target" : "App.XUIPage2",
+                        "params" : [true],
+                        "method" : "switch"
                     }
                 ])
             );
@@ -1763,13 +1733,13 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Fill Profiles")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"page",
-                        "target":"App.XUISubPage",
-                        "params":[
+                        "desc" : "action",
+                        "type" : "page",
+                        "target" : "App.XUISubPage",
+                        "params" : [
                             "[data]data/prfs.json"
                         ],
-                        "method":"setProfile"
+                        "method" : "setProfile"
                     }
                 ])
             );
@@ -1796,34 +1766,34 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("RPC Call")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"api_1",
-                        "params":[ ],
-                        "method":"invoke",
-                        "onOK":0,
-                        "onKO":1
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "api_1",
+                        "params" : [ ],
+                        "method" : "invoke",
+                        "onOK" : 0,
+                        "onKO" : 1
                     },
                     {
-                        "desc":"Adjust Data",
-                        "type":"other",
-                        "target":"var",
-                        "params":[
+                        "desc" : "Adjust Data",
+                        "type" : "other",
+                        "target" : "var",
+                        "params" : [
                             "okData2",
                             "{temp.okData}"
                         ],
-                        "method":"temp",
-                        "adjust":"stringify"
+                        "method" : "temp",
+                        "adjust" : "stringify"
                     },
                     {
-                        "desc":"Show result",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "Show result",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "OK",
                             "{temp.okData2}"
                         ],
-                        "method":"pop"
+                        "method" : "pop"
                     }
                 ])
             );
@@ -1839,162 +1809,162 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Conditions")
                 .onClick([
                     {
-                        "desc":"=",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "=",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "1=1"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"1",
-                                "symbol":"=",
-                                "right":"1"
+                                "left" : "1",
+                                "symbol" : "=",
+                                "right" : "1"
                             }
                         ]
                     },
                     {
-                        "desc":"!=",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "!=",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "2!=1"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"2",
-                                "symbol":"!=",
-                                "right":"1"
+                                "left" : "2",
+                                "symbol" : "!=",
+                                "right" : "1"
                             }
                         ]
                     },
                     {
-                        "desc":">",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : ">",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "2>1"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"2",
-                                "symbol":">",
-                                "right":"1"
+                                "left" : "2",
+                                "symbol" : ">",
+                                "right" : "1"
                             }
                         ]
                     },
                     {
-                        "desc":"<",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "<",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "1<2"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"1",
-                                "symbol":"<",
-                                "right":"2"
+                                "left" : "1",
+                                "symbol" : "<",
+                                "right" : "2"
                             }
                         ]
                     },
                     {
-                        "desc":"<=",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "<=",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "2<=3"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"2",
-                                "symbol":"<=",
-                                "right":"3"
+                                "left" : "2",
+                                "symbol" : "<=",
+                                "right" : "3"
                             }
                         ]
                     },
                     {
-                        "desc":">=",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : ">=",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "1>=1"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"1",
-                                "symbol":">=",
-                                "right":"1"
+                                "left" : "1",
+                                "symbol" : ">=",
+                                "right" : "1"
                             }
                         ]
                     },
                     {
-                        "desc":"contains",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "contains",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "'aa bb cc' contains 'bb'"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"aa bb cc",
-                                "symbol":"include",
-                                "right":"bb"
+                                "left" : "aa bb cc",
+                                "symbol" : "include",
+                                "right" : "bb"
                             }
                         ]
                     },
                     {
-                        "desc":"doesn't contain",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "doesn't contain",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "'aa dd cc' doesn't contain 'bb'"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"aa dd cc",
-                                "symbol":"exclude",
-                                "right":"bb"
+                                "left" : "aa dd cc",
+                                "symbol" : "exclude",
+                                "right" : "bb"
                             }
                         ]
                     },
                     {
-                        "desc":"start with",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "start with",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "'aa dd cc' starts with 'aa'"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"aa dd cc",
-                                "symbol":"start",
-                                "right":"aa"
+                                "left" : "aa dd cc",
+                                "symbol" : "start",
+                                "right" : "aa"
                             }
                         ]
                     },
                     {
-                        "desc":"end with",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "end with",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "'aa dd cc' ends with 'cc'"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"aa dd cc",
-                                "symbol":"end",
-                                "right":"cc"
+                                "left" : "aa dd cc",
+                                "symbol" : "end",
+                                "right" : "cc"
                             }
                         ]
                     }
@@ -2012,24 +1982,24 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Keyborad Event")
                 .onHotKeydown([
                     {
-                        "desc":"action1",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "action1",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "Key:{args.1.key}<br/>\nCtrl:{args.1.ctrlKey}<br/>\nShift:{args.1.shiftKey}<br/>\nAlt:{args.1.altKey}",
                             "Keyboard Event",
                             200,
                             5000
                         ],
-                        "method":"message",
-                        "conditions":[
+                        "method" : "message",
+                        "conditions" : [
                             {
-                                "left":"",
-                                "symbol":"=",
-                                "right":""
+                                "left" : "",
+                                "symbol" : "=",
+                                "right" : ""
                             }
                         ],
-                        "event":2
+                        "event" : 2
                     }
                 ])
                 .onClick([ ])
@@ -2046,22 +2016,22 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Mouse Event")
                 .onClick([
                     {
-                        "desc":"Mouse",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "Mouse",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "Mouse Event",
                             "button:{args.1.button}<br/>\npageX:{args.1.pageX}<br/>\npageY:{args.1.pageY}<br/>\n\n<br/><br/>\nCtrl:{args.1.ctrlKey}<br/>\nshiftKey:{args.1.shiftKey}<br/>\nAltKey:{args.1.AltKey}"
                         ],
-                        "method":"pop",
-                        "conditions":[
+                        "method" : "pop",
+                        "conditions" : [
                             {
-                                "left":"",
-                                "symbol":"=",
-                                "right":""
+                                "left" : "",
+                                "symbol" : "=",
+                                "right" : ""
                             }
                         ],
-                        "event":1
+                        "event" : 1
                     }
                 ])
             );
@@ -2076,15 +2046,15 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Stop close")
                 .beforeClose([
                     {
-                        "desc":"stop",
-                        "type":"other",
-                        "target":"msg",
-                        "params":[
+                        "desc" : "stop",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [
                             "Cancel before event",
                             "Close Event was cancelled!"
                         ],
-                        "method":"pop",
-                        "return":false
+                        "method" : "pop",
+                        "return" : false
                     }
                 ])
             );
@@ -2094,19 +2064,19 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"ctl_tabs4")
                 .setItems([
                     {
-                        "id":"a",
-                        "caption":"page1",
-                        "image":""
+                        "id" : "a",
+                        "caption" : "page1",
+                        "image" : ""
                     },
                     {
-                        "id":"b",
-                        "caption":"page2",
-                        "image":""
+                        "id" : "b",
+                        "caption" : "page2",
+                        "image" : ""
                     },
                     {
-                        "id":"c",
-                        "caption":"page3",
-                        "image":""
+                        "id" : "c",
+                        "caption" : "page3",
+                        "image" : ""
                     }
                 ])
                 .setValue("a")
@@ -2117,29 +2087,29 @@ xui.Class('App', 'xui.Module',{
                 .setHost(host,"ctl_layout14")
                 .setItems([
                     {
-                        "id":"before",
-                        "pos":"before",
-                        "min":10,
-                        "size":80,
-                        "locked":false,
-                        "folded":false,
-                        "hidden":false,
-                        "cmd":true
+                        "id" : "before",
+                        "pos" : "before",
+                        "min" : 10,
+                        "size" : 80,
+                        "locked" : false,
+                        "folded" : false,
+                        "hidden" : false,
+                        "cmd" : true
                     },
                     {
-                        "id":"main",
-                        "min":10,
-                        "size":80
+                        "id" : "main",
+                        "min" : 10,
+                        "size" : 80
                     },
                     {
-                        "id":"after",
-                        "pos":"after",
-                        "cmd":false,
-                        "min":10,
-                        "size":80,
-                        "locked":false,
-                        "folded":false,
-                        "hidden":false
+                        "id" : "after",
+                        "pos" : "after",
+                        "cmd" : false,
+                        "min" : 10,
+                        "size" : 80,
+                        "locked" : false,
+                        "folded" : false,
+                        "hidden" : false
                     }
                 ])
                 .setType("horizontal"),
@@ -2165,16 +2135,16 @@ xui.Class('App', 'xui.Module',{
                 .setTop("20px")
                 .setWidth("334px")
                 .setHeight("47px")
-                .setCaption("UI Interaction Test")
+                .setCaption("Wav Print Service Application")
                 .setHAlign("center")
                 .setCustomStyle({
-                    "KEY":{
-                        "color":"#4B0082",
-                        "font-family":"comic sans ms,cursive",
-                        "font-size":"2em",
-                        "font-weight":"bold",
-                        "text-shadow":"0px 0px 9px #DA70D6",
-                        "opacity":0.8
+                    "KEY" : {
+                        "color" : "#4B0082",
+                        "font-family" : "comic sans ms,cursive",
+                        "font-size" : "2em",
+                        "font-weight" : "bold",
+                        "text-shadow" : "0px 0px 9px #DA70D6",
+                        "opacity" : 0.8
                     }
                 })
             );
@@ -2190,100 +2160,100 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Insert Items to Tabs")
                 .onClick([
                     {
-                        "desc":"first",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "first",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             [
                                 {
-                                    "id":"first",
-                                    "caption":"first"
+                                    "id" : "first",
+                                    "caption" : "first"
                                 }
                             ],
                             "",
                             true
                         ],
-                        "method":"insertItems"
+                        "method" : "insertItems"
                     },
                     {
-                        "desc":"last",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "last",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             [
                                 {
-                                    "id":"last",
-                                    "caption":"last"
+                                    "id" : "last",
+                                    "caption" : "last"
                                 }
                             ],
                             "",
                             false
                         ],
-                        "method":"insertItems"
+                        "method" : "insertItems"
                     },
                     {
-                        "desc":"before 1",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "before 1",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             [
                                 {
-                                    "id":"b0",
-                                    "caption":"b-page2"
+                                    "id" : "b0",
+                                    "caption" : "b-page2"
                                 }
                             ],
                             "b",
                             true
                         ],
-                        "method":"insertItems"
+                        "method" : "insertItems"
                     },
                     {
-                        "desc":"before 2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "before 2",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             [
                                 {
-                                    "id":"b2",
-                                    "caption":"b-last"
+                                    "id" : "b2",
+                                    "caption" : "b-last"
                                 }
                             ],
                             "last",
                             true
                         ],
-                        "method":"insertItems"
+                        "method" : "insertItems"
                     },
                     {
-                        "desc":"after 1",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "after 1",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             [
                                 {
-                                    "id":"a1",
-                                    "caption":"a-page2"
+                                    "id" : "a1",
+                                    "caption" : "a-page2"
                                 }
                             ],
                             "b",
                             false
                         ],
-                        "method":"insertItems"
+                        "method" : "insertItems"
                     },
                     {
-                        "desc":"after 2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "after 2",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             [
                                 {
-                                    "id":"a2",
-                                    "caption":"a-last"
+                                    "id" : "a2",
+                                    "caption" : "a-last"
                                 }
                             ],
                             "last",
                             false
                         ],
-                        "method":"insertItems"
+                        "method" : "insertItems"
                     }
                 ])
             );
@@ -2299,29 +2269,29 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Update Item in Tabs")
                 .onClick([
                     {
-                        "desc":"a",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "a",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             "a",
                             {
-                                "caption":"[page1]",
-                                "image":"{/}img/box.png"
+                                "caption" : "[page1]",
+                                "image" : "{/}img/box.png"
                             }
                         ],
-                        "method":"updateItem"
+                        "method" : "updateItem"
                     },
                     {
-                        "desc":"b",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "b",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             "last",
                             {
-                                "caption":"[last one]"
+                                "caption" : "[last one]"
                             }
                         ],
-                        "method":"updateItem"
+                        "method" : "updateItem"
                     }
                 ])
             );
@@ -2337,22 +2307,22 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Remove Items  in Tabs")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             "c"
                         ],
-                        "method":"removeItems"
+                        "method" : "removeItems"
                     },
                     {
-                        "desc":"action2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "params":[
+                        "desc" : "action2",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "params" : [
                             "first"
                         ],
-                        "method":"removeItems"
+                        "method" : "removeItems"
                     }
                 ])
             );
@@ -2368,24 +2338,52 @@ xui.Class('App', 'xui.Module',{
                 .setCaption("Select Tab")
                 .onClick([
                     {
-                        "desc":"action",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "method":"fireItemClickEvent",
-                        "args":[
+                        "desc" : "action",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "method" : "fireItemClickEvent",
+                        "args" : [
                             "c"
                         ],
-                        "event":1
+                        "event" : 1
                     },
                     {
-                        "desc":"action2",
-                        "type":"control",
-                        "target":"ctl_tabs4",
-                        "method":"fireItemClickEvent",
-                        "timeout":1000,
-                        "args":[
+                        "desc" : "action2",
+                        "type" : "control",
+                        "target" : "ctl_tabs4",
+                        "method" : "fireItemClickEvent",
+                        "timeout" : 1000,
+                        "args" : [
                             "a"
                         ]
+                    }
+                ])
+            );
+            
+            host.ctl_pane39.append(
+                xui.create("xui.UI.HTMLButton")
+                .setHost(host,"ctl_htmlbutton63")
+                .setDesc("Show Waiting")
+                .setLeft("20.571428571428573em")
+                .setTop("17.523809523809526em")
+                .setWidth("8.304761904761905em")
+                .setHeight("2.5142857142857142em")
+                .setCaption("Other Supplies")
+                .onClick([
+                    {
+                        "desc" : "wait",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [ ],
+                        "method" : "busy"
+                    },
+                    {
+                        "desc" : "ok",
+                        "type" : "other",
+                        "target" : "msg",
+                        "params" : [ ],
+                        "method" : "free",
+                        "timeout" : 1000
                     }
                 ])
             );
